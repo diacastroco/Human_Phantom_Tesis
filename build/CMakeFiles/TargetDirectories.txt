@@ -1,0 +1,8 @@
+/home/castrensis/Tesis/human_phantom/build/CMakeFiles/install/strip.dir
+/home/castrensis/Tesis/human_phantom/build/CMakeFiles/install/local.dir
+/home/castrensis/Tesis/human_phantom/build/CMakeFiles/install.dir
+/home/castrensis/Tesis/human_phantom/build/CMakeFiles/list_install_components.dir
+/home/castrensis/Tesis/human_phantom/build/CMakeFiles/rebuild_cache.dir
+/home/castrensis/Tesis/human_phantom/build/CMakeFiles/edit_cache.dir
+/home/castrensis/Tesis/human_phantom/build/CMakeFiles/human_phantom.dir
+/home/castrensis/Tesis/human_phantom/build/CMakeFiles/phantom.dir
