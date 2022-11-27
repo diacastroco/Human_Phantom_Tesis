@@ -290,6 +290,33 @@ src/G4FemaleBuilder.cc.s:
 	$(MAKE) -f CMakeFiles/phantom.dir/build.make CMakeFiles/phantom.dir/src/G4FemaleBuilder.cc.s
 .PHONY : src/G4FemaleBuilder.cc.s
 
+src/G4Fetus.o: src/G4Fetus.cc.o
+
+.PHONY : src/G4Fetus.o
+
+# target to build an object file
+src/G4Fetus.cc.o:
+	$(MAKE) -f CMakeFiles/phantom.dir/build.make CMakeFiles/phantom.dir/src/G4Fetus.cc.o
+.PHONY : src/G4Fetus.cc.o
+
+src/G4Fetus.i: src/G4Fetus.cc.i
+
+.PHONY : src/G4Fetus.i
+
+# target to preprocess a source file
+src/G4Fetus.cc.i:
+	$(MAKE) -f CMakeFiles/phantom.dir/build.make CMakeFiles/phantom.dir/src/G4Fetus.cc.i
+.PHONY : src/G4Fetus.cc.i
+
+src/G4Fetus.s: src/G4Fetus.cc.s
+
+.PHONY : src/G4Fetus.s
+
+# target to generate assembly for a file
+src/G4Fetus.cc.s:
+	$(MAKE) -f CMakeFiles/phantom.dir/build.make CMakeFiles/phantom.dir/src/G4Fetus.cc.s
+.PHONY : src/G4Fetus.cc.s
+
 src/G4HumanPhantomActionInitialization.o: src/G4HumanPhantomActionInitialization.cc.o
 
 .PHONY : src/G4HumanPhantomActionInitialization.o
@@ -2125,6 +2152,9 @@ help:
 	@echo "... src/G4FemaleBuilder.o"
 	@echo "... src/G4FemaleBuilder.i"
 	@echo "... src/G4FemaleBuilder.s"
+	@echo "... src/G4Fetus.o"
+	@echo "... src/G4Fetus.i"
+	@echo "... src/G4Fetus.s"
 	@echo "... src/G4HumanPhantomActionInitialization.o"
 	@echo "... src/G4HumanPhantomActionInitialization.i"
 	@echo "... src/G4HumanPhantomActionInitialization.s"

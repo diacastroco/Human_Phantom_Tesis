@@ -65,15 +65,15 @@ G4VPhysicalVolume* G4MIRDUrinaryBladder::Construct(const G4String& volumeName, G
   G4Material* soft = material -> GetMaterial("soft_tissue");
   delete material;
 
-  G4double ax = 4.958*cm; 
-  G4double by= 3.458 *cm;
-  G4double cz= 3.458 *cm;
+  G4double ax = 3.358*cm; 
+  G4double by= 2.158 *cm;
+  G4double cz= 2.158 *cm;
  
   G4Ellipsoid* bladder = new G4Ellipsoid("bladder_out",ax, by, cz);
  
-  ax = 4.706 * cm;
-  by = 3.206 * cm;
-  cz = 3.206 * cm;
+  ax = 3.106 * cm;
+  by = 1.906 * cm;
+  cz = 1.906 * cm;
   G4Ellipsoid* inner = new G4Ellipsoid("innerBladder", ax, by, cz);
  
   G4SubtractionSolid* totalBladder = new G4SubtractionSolid("bladder", bladder, inner);
@@ -83,7 +83,7 @@ G4VPhysicalVolume* G4MIRDUrinaryBladder::Construct(const G4String& volumeName, G
 							     0, 0, 0);
   
   // Define rotation and position here!
-  G4VPhysicalVolume* physUrinaryBladder = new G4PVPlacement(0,G4ThreeVector(0 *cm, -4.5 *cm,-27. *cm),
+  G4VPhysicalVolume* physUrinaryBladder = new G4PVPlacement(0,G4ThreeVector(0 *cm, -4.5 *cm,-29. *cm),
 							    "physicalUrinaryBladder",
 							    logicUrinaryBladder,
 							    mother,

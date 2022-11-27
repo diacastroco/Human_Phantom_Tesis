@@ -11,7 +11,10 @@
 #/control/execute adultORNLFemale.mac
 #
 # Primary radiation field
+
 /control/execute primary.mac
+#/control/execute primary100.mac
+#/control/execute mono140.mac
 #
 #
 # Visualization Config

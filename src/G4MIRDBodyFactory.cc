@@ -51,6 +51,7 @@
 #include "G4MIRDThyroid.hh"
 #include "G4MIRDThymus.hh"
 #include "G4MIRDUterus.hh"
+#include "G4Fetus.hh"
 #include "G4MIRDLeftBreast.hh"
 #include "G4MIRDRightBreast.hh"
 #include "G4MIRDRightOvary.hh"
@@ -111,7 +112,8 @@ G4MIRDBodyFactory::G4MIRDBodyFactory()
   organ["LeftKidney"] = new G4MIRDLeftKidney();
   organ["RightKidney"] = new G4MIRDRightKidney();
   organ["UrinaryBladder"] = new G4MIRDUrinaryBladder();
-  organ["Uterus"] = new G4MIRDUterus(); 
+  organ["Uterus"] = new G4MIRDUterus();
+  organ["Fetus"] = new G4Fetus();
   organ["Liver"] = new G4MIRDLiver(); 
   organ["LeftLung"]= new G4MIRDLeftLung();
   organ["RightLung"] = new G4MIRDRightLung();
@@ -157,6 +159,7 @@ G4MIRDBodyFactory::~G4MIRDBodyFactory()
   delete organ["RightLung"]; organ["RightLung"] =0;
   delete organ["LeftLung"]; organ["LeftLung"]=0;
   delete organ["Uterus"]; organ["Uterus"]=0;
+  delete organ["Fetus"]; organ["Fetus"]=0;
   delete organ["UrinaryBladder"]; organ["UrinaryBladder"]=0;
   delete organ["RightKidney"]; organ["RightKidney"] =0;  
   delete organ["LeftKidney"]; organ["LeftKidney"] =0; 

@@ -80,6 +80,7 @@ void G4HumanPhantomEventAction::BeginOfEventAction(const G4Event*)
  energyTotal["logicalRightKidney"]=0.;
  energyTotal["logicalUrinaryBladder"]=0.;
  energyTotal["logicalUterus"]=0.;
+ energyTotal["logicalFetus"]=0.;
  energyTotal["logicalLeftLung"]=0.;
  energyTotal["logicalRightLung"]=0.;
  energyTotal["logicalLeftOvary"]=0.;

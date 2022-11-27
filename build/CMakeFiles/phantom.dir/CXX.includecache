@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+../include/G4Fetus.hh
+G4VPhysicalVolume.hh
+../include/G4VPhysicalVolume.hh
+G4VOrgan.hh
+../include/G4VOrgan.hh
+
 ../include/G4HumanPhantomColour.hh
 globals.hh
 ../include/globals.hh
@@ -14,19 +20,13 @@ globals.hh
 globals.hh
 ../include/globals.hh
 
-../include/G4MIRDUterus.hh
-G4VPhysicalVolume.hh
-../include/G4VPhysicalVolume.hh
-G4VOrgan.hh
-../include/G4VOrgan.hh
-
 ../include/G4VOrgan.hh
 G4VPhysicalVolume.hh
 ../include/G4VPhysicalVolume.hh
 
-/home/castrensis/Tesis/human_phantom/src/G4MIRDUterus.cc
-G4MIRDUterus.hh
-/home/castrensis/Tesis/human_phantom/src/G4MIRDUterus.hh
+/home/castrensis/Tesis/human_phantom/src/G4Fetus.cc
+G4Fetus.hh
+/home/castrensis/Tesis/human_phantom/src/G4Fetus.hh
 globals.hh
 /home/castrensis/Tesis/human_phantom/src/globals.hh
 G4SystemOfUnits.hh
@@ -37,6 +37,10 @@ G4VisAttributes.hh
 /home/castrensis/Tesis/human_phantom/src/G4VisAttributes.hh
 G4Ellipsoid.hh
 /home/castrensis/Tesis/human_phantom/src/G4Ellipsoid.hh
+G4Box.hh
+/home/castrensis/Tesis/human_phantom/src/G4Box.hh
+G4Tubs.hh
+/home/castrensis/Tesis/human_phantom/src/G4Tubs.hh
 G4ThreeVector.hh
 /home/castrensis/Tesis/human_phantom/src/G4ThreeVector.hh
 G4VPhysicalVolume.hh
@@ -273,6 +277,24 @@ G4Point3D.hh
 /home/castrensis/geant4/geant4.10.07.p03-install/include/Geant4/G4Point3D.hh
 G4Plane3D.hh
 /home/castrensis/geant4/geant4.10.07.p03-install/include/Geant4/G4Plane3D.hh
+
+/home/castrensis/geant4/geant4.10.07.p03-install/include/Geant4/G4Box.hh
+G4GeomTypes.hh
+/home/castrensis/geant4/geant4.10.07.p03-install/include/Geant4/G4GeomTypes.hh
+G4UBox.hh
+/home/castrensis/geant4/geant4.10.07.p03-install/include/Geant4/G4UBox.hh
+G4CSGSolid.hh
+/home/castrensis/geant4/geant4.10.07.p03-install/include/Geant4/G4CSGSolid.hh
+G4Polyhedron.hh
+/home/castrensis/geant4/geant4.10.07.p03-install/include/Geant4/G4Polyhedron.hh
+G4Box.icc
+/home/castrensis/geant4/geant4.10.07.p03-install/include/Geant4/G4Box.icc
+
+/home/castrensis/geant4/geant4.10.07.p03-install/include/Geant4/G4Box.icc
+
+/home/castrensis/geant4/geant4.10.07.p03-install/include/Geant4/G4CSGSolid.hh
+G4VSolid.hh
+/home/castrensis/geant4/geant4.10.07.p03-install/include/Geant4/G4VSolid.hh
 
 /home/castrensis/geant4/geant4.10.07.p03-install/include/Geant4/G4CollectionNameVector.hh
 globals.hh
@@ -1064,6 +1086,22 @@ globals.hh
 CLHEP/Geometry/Transform3D.h
 -
 
+/home/castrensis/geant4/geant4.10.07.p03-install/include/Geant4/G4Tubs.hh
+G4GeomTypes.hh
+/home/castrensis/geant4/geant4.10.07.p03-install/include/Geant4/G4GeomTypes.hh
+G4UTubs.hh
+/home/castrensis/geant4/geant4.10.07.p03-install/include/Geant4/G4UTubs.hh
+CLHEP/Units/PhysicalConstants.h
+-
+G4CSGSolid.hh
+/home/castrensis/geant4/geant4.10.07.p03-install/include/Geant4/G4CSGSolid.hh
+G4Polyhedron.hh
+/home/castrensis/geant4/geant4.10.07.p03-install/include/Geant4/G4Polyhedron.hh
+G4Tubs.icc
+/home/castrensis/geant4/geant4.10.07.p03-install/include/Geant4/G4Tubs.icc
+
+/home/castrensis/geant4/geant4.10.07.p03-install/include/Geant4/G4Tubs.icc
+
 /home/castrensis/geant4/geant4.10.07.p03-install/include/Geant4/G4Types.hh
 G4GlobalConfig.hh
 /home/castrensis/geant4/geant4.10.07.p03-install/include/Geant4/G4GlobalConfig.hh
@@ -1098,10 +1136,26 @@ VecGeom/base/Global.h
 VecGeom/base/Vector3D.h
 -
 
+/home/castrensis/geant4/geant4.10.07.p03-install/include/Geant4/G4UBox.hh
+G4UAdapter.hh
+/home/castrensis/geant4/geant4.10.07.p03-install/include/Geant4/G4UAdapter.hh
+VecGeom/volumes/UnplacedBox.h
+-
+G4Polyhedron.hh
+/home/castrensis/geant4/geant4.10.07.p03-install/include/Geant4/G4Polyhedron.hh
+
 /home/castrensis/geant4/geant4.10.07.p03-install/include/Geant4/G4UEllipsoid.hh
 G4UAdapter.hh
 /home/castrensis/geant4/geant4.10.07.p03-install/include/Geant4/G4UAdapter.hh
 VecGeom/volumes/UnplacedEllipsoid.h
+-
+G4Polyhedron.hh
+/home/castrensis/geant4/geant4.10.07.p03-install/include/Geant4/G4Polyhedron.hh
+
+/home/castrensis/geant4/geant4.10.07.p03-install/include/Geant4/G4UTubs.hh
+G4UAdapter.hh
+/home/castrensis/geant4/geant4.10.07.p03-install/include/Geant4/G4UAdapter.hh
+VecGeom/volumes/UnplacedTube.h
 -
 G4Polyhedron.hh
 /home/castrensis/geant4/geant4.10.07.p03-install/include/Geant4/G4Polyhedron.hh

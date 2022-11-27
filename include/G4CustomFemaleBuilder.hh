@@ -46,5 +46,6 @@ public:
   void BuildLeftOvary(const G4String&, G4bool, G4bool);
   void BuildRightOvary(const G4String&, G4bool, G4bool);
   void BuildUterus(const G4String&, G4bool, G4bool);
+  void BuildFetus(const G4String&, G4bool, G4bool);
 };
 #endif

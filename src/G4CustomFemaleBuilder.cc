@@ -55,6 +55,14 @@ if (trunkVolume == 0)
 
  body -> CreateOrgan("Uterus",trunkVolume, colourName, solidVis, sensitivity);  }
 
+void G4CustomFemaleBuilder::BuildFetus(const G4String& colourName, G4bool solidVis, G4bool sensitivity )
+
+{
+if (trunkVolume == 0)
+  G4Exception("G4CustomFemaleBuilder::BuildFetus()", "human_phantom0001", FatalException, "The trunk volume is missing !!!!!");
+
+ body -> CreateOrgan("Fetus",trunkVolume, colourName, solidVis, sensitivity);  }
+
 void G4CustomFemaleBuilder::BuildLeftOvary(const G4String& colourName, G4bool solidVis, G4bool sensitivity )
 
 {

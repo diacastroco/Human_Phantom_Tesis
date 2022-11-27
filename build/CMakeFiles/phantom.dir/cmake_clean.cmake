@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/phantom.dir/src/G4BasePhantomBuilder.cc.o"
   "CMakeFiles/phantom.dir/src/G4CustomFemaleBuilder.cc.o"
   "CMakeFiles/phantom.dir/src/G4FemaleBuilder.cc.o"
+  "CMakeFiles/phantom.dir/src/G4Fetus.cc.o"
   "CMakeFiles/phantom.dir/src/G4HumanPhantomActionInitialization.cc.o"
   "CMakeFiles/phantom.dir/src/G4HumanPhantomAnalysisManager.cc.o"
   "CMakeFiles/phantom.dir/src/G4HumanPhantomColour.cc.o"

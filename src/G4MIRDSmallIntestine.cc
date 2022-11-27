@@ -45,6 +45,7 @@
 #include "G4Torus.hh"
 #include "G4Tubs.hh"
 #include "G4Box.hh"
+#include "G4Ellipsoid.hh"
 #include "G4IntersectionSolid.hh"
 #include "G4SubtractionSolid.hh"
 #include "G4HumanPhantomMaterial.hh"
@@ -93,6 +94,7 @@ G4VPhysicalVolume* G4MIRDSmallIntestine::Construct(const G4String& volumeName,
   G4IntersectionSolid* filledSmallIntestine = new G4IntersectionSolid("filledSmallIntestine",filledSmallIntestine1,smallIntestineTubs,
 								      0,G4ThreeVector(0*cm,0.8*cm, 0*cm));
 
+
   G4double dx = 2.50*cm; // aU
   G4double dy = 2.50*cm; //bU
   G4double dz = 4.775*cm; //dzU
@@ -134,8 +136,24 @@ G4VPhysicalVolume* G4MIRDSmallIntestine::Construct(const G4String& volumeName,
 							      0,
 							      G4ThreeVector(8.0*cm,-0.3*cm,-2.775*cm));
 
+
+  //ESPACIO PARA EL UTERO
+
+  G4double ax= 6*cm; // Largo hombro a hombro
+  G4double by= 6*cm; //Largo pies a cabeza
+  G4double cz= 8.*cm; //Ancho espalda a pecho 
+  G4double zcut1= -8.*cm; // Corte superior
+  G4double zcut2= 5*cm; // Corte inferior
+
+
+  G4Ellipsoid* uterus = new G4Ellipsoid("Uterus",
+					ax, by, cz,
+					zcut1, zcut2);
+
+  //SUBSTRACTION
+  G4VSolid* SmallIntestine1 = new G4SubtractionSolid("SmallIntestine1", SmallIntestine, uterus,0, G4ThreeVector(0 *cm, 0*cm, -7*cm));
   
-  G4LogicalVolume* logicSmallIntestine = new G4LogicalVolume( SmallIntestine, 
+  G4LogicalVolume* logicSmallIntestine = new G4LogicalVolume( SmallIntestine1, 
 							      soft,
 							      "logical"+volumeName,
 							      0, 0, 0);

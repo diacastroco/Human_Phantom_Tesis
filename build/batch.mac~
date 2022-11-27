@@ -1,0 +1,18 @@
+#/control/execute adultMIXFemale.mac
+# or ...
+#/control/execute adultHead.mac
+# or ...
+/control/execute adultMIRDMale.mac
+# or ...
+#/control/execute adultMIRDFemale.mac
+# or ...
+#/control/execute adultORNLMale.mac
+# or...
+#/control/execute adultORNLFemale.mac
+#
+# Primary radiation field
+#/control/execute primary.mac
+#/control/execute primary100.mac
+/control/execute mono140.mac
+#
+/run/beamOn 10000
